@@ -37,7 +37,9 @@ import {
   Tree,
   Upload,
   Carousel,
-  CarouselItem
+  CarouselItem,
+  Popconfirm,
+  Popover,
 } from 'element-ui'
 Message.install = () => {
   Vue.prototype.$message = Message
@@ -87,3 +89,5 @@ Vue.use(Tree)
 Vue.use(Upload)
 Vue.use(Carousel)
 Vue.use(CarouselItem)
+Vue.use(Popconfirm)
+Vue.use(Popover)
