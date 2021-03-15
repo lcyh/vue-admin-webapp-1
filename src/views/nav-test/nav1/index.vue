@@ -133,7 +133,12 @@ export default {
           {
             gameType: 'strategy',
             games: ['all'],
-            accessTime: '6 month',
+            accessTime: '1 month',
+          },
+          {
+            gameType: 'single',
+            games: ['all', 'ios'],
+            accessTime: '3 month',
           },
         ],
       },
@@ -221,7 +226,7 @@ export default {
     addItem() {
       this.form.dynamicItem.push({
         gameType: 'single',
-        games: ['all'],
+        games: [],
         accessTime: '6 month',
       })
     },

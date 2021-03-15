@@ -7,10 +7,16 @@ const navTest = {
   redirect: '/nav-test/nav1',
   children: [
     {
+      path: 'announcement',
+      name: 'Announcement',
+      component: () => import('@/views/nav-test/announcement'),
+      meta: { title: '公告管理', icon: 'el-icon-coffee' },
+    },
+    {
       path: 'nav1',
       name: 'Nav1',
       component: () => import('@/views/nav-test/nav1'),
-      meta: { title: '菜单1', icon: 'el-icon-coffee' }
+      meta: { title: '菜单1', icon: 'el-icon-coffee' },
     },
     {
       path: 'nav2',
@@ -23,7 +29,7 @@ const navTest = {
           path: 'nav2-1',
           name: 'Nav2-1',
           component: () => import('@/views/nav-test/nav2/nav2-1'),
-          meta: { title: '菜单2-1' }
+          meta: { title: '菜单2-1' },
         },
         {
           path: 'nav2-2',
@@ -36,18 +42,18 @@ const navTest = {
               path: 'nav2-2-1',
               name: 'Nav2-2-1',
               component: () => import('@/views/nav-test/nav2/nav2-2/nav2-2-1'),
-              meta: { title: '菜单2-2-1', icon: 'el-icon-lollipop' }
+              meta: { title: '菜单2-2-1', icon: 'el-icon-lollipop' },
             },
             {
               path: 'nav2-2-2',
               name: 'Nav2-2-2',
               component: () => import('@/views/nav-test/nav2/nav2-2/nav2-2-2'),
-              meta: { title: '菜单2-2-2' }
-            }
-          ]
-        }
-      ]
-    }
-  ]
+              meta: { title: '菜单2-2-2' },
+            },
+          ],
+        },
+      ],
+    },
+  ],
 }
 export default navTest
