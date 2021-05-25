@@ -13,6 +13,13 @@ const navTest = {
       meta: { title: '公告管理', icon: 'el-icon-coffee' },
     },
     {
+      path: 'fullPlatformOverview',
+      name: 'FullPlatformOverview',
+      component: () =>
+        import('@/views/nav-test/forecast/FullPlatformOverview.vue'),
+      meta: { title: '全平台预测概览', icon: 'el-icon-coffee' }
+    },
+    {
       path: 'nav1',
       name: 'Nav1',
       component: () => import('@/views/nav-test/nav1'),
